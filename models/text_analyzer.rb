@@ -4,11 +4,14 @@ class TextAnalyzer
 
   def initialize(text)
     @text = text.downcase
+
   end
 
   def count_of_words
     words = text.split(" ")
     words.count
+    #binding.pry
+
   end
 
   def count_of_vowels
@@ -39,5 +42,6 @@ class TextAnalyzer
     end
 
     biggest
+    #binding.pry
   end
 end
